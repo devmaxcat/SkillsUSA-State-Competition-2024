@@ -15,6 +15,7 @@
     --color-text-dark: black;
     --color-text-light: white;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
     font-family: 'Montserrat';
     margin: 0;
     background-color: 	#FAF9F6;
+    overflow-x: hidden;
 }
 
 .button {
@@ -472,7 +474,7 @@ label {
     padding: 2em;
     padding-top: .5em;
     left: calc(50% - 13em);
-    top: calc(50% - 13sem);
+    top: calc(50% - 10em);
 }
 
 .contact-names {
@@ -557,4 +559,69 @@ footer .social-media {
 
 footer .copyright {
     text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .hero-text {
+        padding-right: .5em;
+        font-size: .9em;
+    }
+    .page-title {
+        flex-direction: column !important;
+        padding: 0;
+    
+        box-sizing: border-box;
+    }
+    .page-title img {
+        
+        box-sizing: border-box;
+    }
+
+    .text-image {
+        margin-bottom: 2em;
+        height: auto;
+        flex-direction: column !important;
+    }
+
+    .car-info-list {
+        width: 50%;
+    }
+
+    .car-action {
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    .car-action .button {
+        padding: .6em;
+    }
+
+    .car-showcase {
+        padding: 0 1em;
+    }
+
+    .focus-title {
+        display: none;
+    }
+
+    .footer-row {
+        row-gap: 2em;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-row > * {
+        align-items: start;
+        justify-content: start;
+    }
+
+    h4 {
+        font-size: 2em !important;
+    }
+
+    .text-image img {
+        margin-top: 3em;
+        width: 100%;
+        height: 100%;
+    }
 }
