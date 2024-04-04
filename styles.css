@@ -150,6 +150,19 @@ header a {
     font-family: LogoFont;
 }
 
+.brand {
+    position: absolute;
+    left: 0;
+}
+
+.brand a {
+    display: flex;
+    align-items: center;
+}
+.brand img {
+    transform: translateY(-.5em);
+}
+
 header a:hover {
     background-color: rgba(211, 211, 211, 0.19);
     backdrop-filter: blur(10px);
@@ -306,6 +319,41 @@ nav {
     border-radius: 5px;
     height: 100%;
     width: 100%;
+    object-fit: cover;
+}
+
+.row {
+    flex-direction: column !important  ;
+}
+
+.text-image {
+    padding: 0 10%;
+    height: 14em;
+   display: flex;
+   column-gap: 10%;
+   margin-top: 3em;
+   margin-bottom: 8em;
+   align-items: center;
+  
+}
+
+.text-image .title {
+    font-size: 2em;
+    font-weight: 600;
+    width: 50%;
+    letter-spacing: -1px;
+    min-width: max-content;
+}
+
+.text-image p {
+    line-height: 1.7em;
+}
+
+
+.text-image img {
+    border-radius: 5px;
+    height: 100%;
+    width: 50%;
     object-fit: cover;
 }
 
