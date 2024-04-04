@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMPERE - Contact</title>
-    <link rel="icon" type="image/x-icon" href="/content/Ampere (2).ico">
+    <link rel="icon" type="image/x-icon" href="/content/Ampere.ico">
     <link href="styles.css" rel="stylesheet">
     <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/f7e0101100.js" crossorigin="anonymous"></script>
@@ -19,17 +19,17 @@
             <div class="contact-names">
                 <div>
                     <label for="firstname">First Name</label>
-                    <input name="firstname" type="text" required>
+                    <input name="firstname" id="firstname" type="text" required>
                 </div>
                 <div>
                     <label for="lastname">Last Name</label>
-                    <input name="lastname" type="text" required>
+                    <input name="lastname" id="lastname" type="text" required>
                 </div>
             </div>
            
            
             <label for="email">Email</label>
-            <input name="email" type="email" required>
+            <input name="email" type="email" id="email" required>
             <div>
                 <label>Topic</label><br>
                 <select>
@@ -46,7 +46,7 @@
                 </select>
             </div>
             <label for="message"></label>
-            <textarea name="message"></textarea>
+            <textarea name="message" id="message"></textarea>
             <input class="button" type="submit" value="Submit">
         </form>
     </section>
