@@ -41,6 +41,12 @@ body {
  
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    color: #3e0c8a;
+}
+
 
 
 header {
@@ -326,6 +332,10 @@ nav {
   
 }
 
+.page-title.row h1 {
+    font-size: 3em;
+}
+
 .page-title .title {
     font-size: 2em;
     font-weight: 600;
@@ -354,6 +364,10 @@ nav {
    margin-bottom: 8em;
    align-items: center;
   
+}
+
+.hero a {
+    color: var(--color-text-light);
 }
 
 .text-image .title {
@@ -440,7 +454,13 @@ nav {
     font-size: 3em;
 }
 
+label {
+    font-weight: 400;
+}
+
 .contact {
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.373);
+    color: var(--color-text-dark);
     width: 26em;
     height: 34em;
     display: flex;
@@ -448,7 +468,7 @@ nav {
     position: absolute;
     top: 5em;
     background-color: #FAF9F6;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 2em;
     padding-top: .5em;
     left: calc(50% - 13em);
