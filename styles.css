@@ -152,21 +152,21 @@ header a {
     font-weight: 500;
 }
 
-.brand-text {
+header .brand-text {
     font-family: LogoFont;
 }
 
-.brand {
+header .brand {
     position: absolute;
     left: 0;
     z-index: 2;
 }
 
-.brand a {
+header .brand a {
     display: flex;
     align-items: center;
 }
-.brand img {
+header .brand img {
     transform: translateY(-.5em);
 }
 
