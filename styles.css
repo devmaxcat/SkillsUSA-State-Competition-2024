@@ -1,0 +1,134 @@
+:root {
+    --color-active: ;
+    --color-background: ;
+    --color-foreground: #FFFFFF;
+    --color-accent: ;
+    --color-text-dark: black;
+    --color-text-light: white;
+    font-size: 16px;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Arial';
+    margin: 0;
+}
+
+
+
+header {
+    color: var(--color-dark);
+    padding: 0 3em;
+    position: absolute;
+    height: 3.5em;
+    width: 100%;
+    box-sizing: border-box;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+body.light header {
+    color: var(--color-text-light);
+}
+
+body.dark header {
+    color: var(--color-text-dark);
+}
+
+body.on-page header {
+    position: static;
+}
+
+header a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    padding: .4em .7em;
+    backdrop-filter: blur(0px);
+    transition-duration: 200ms;
+    border-radius: 3px;
+    background-color:transparent;
+    font-weight: 500;
+}
+
+header a:hover {
+    background-color: rgba(211, 211, 211, 0.19);
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    width: 100%;
+    column-gap: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-right {
+    position: absolute;
+    right: 0;
+}
+
+.hero {
+    
+    width: 100%;
+    height: 90vh;
+    box-shadow: inset 0 20em 10em #03020a70;
+}
+
+
+.hero img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+   
+}
+
+.icon {
+    height: 1.5em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon-link {
+    padding: .2em .2em !important;
+}
+
+/* */ 
+.car-comparison {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.car-info-list {
+    width: 20em;
+}
+
+.car-preview {
+
+        width: 100%;
+        height: 10em;
+        object-fit: cover;
+}
+
+.car-name {
+    text-align: center;
+}
+
+.car-price {
+    text-align: center;
+    font-size: .9em;
+}
+
+.point {
+    font-size: .9em;
+    text-align: center;
+}
