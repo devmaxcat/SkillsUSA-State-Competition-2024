@@ -334,6 +334,14 @@ nav {
   
 }
 
+.page-title.row {
+    height: auto;
+}
+
+.page-title img {
+    max-height: 15em;
+}
+
 .page-title.row h1 {
     font-size: 3em;
 }
@@ -461,6 +469,7 @@ label {
 }
 
 .contact {
+    box-sizing: border-box;
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.373);
     color: var(--color-text-dark);
     width: 26em;
@@ -557,7 +566,27 @@ footer .social-media {
     display: flex;
 }
 
+.gallary-interior {
+    display: flex;
+}
+
 footer .copyright {
+    text-align: center;
+}
+
+.headline-container {
+    margin: 10%;
+}
+
+.headline-container .headline {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.headline-container .interior {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
 
