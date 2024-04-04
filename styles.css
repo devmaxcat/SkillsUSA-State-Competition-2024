@@ -150,6 +150,19 @@ header a {
     font-family: LogoFont;
 }
 
+.brand {
+    position: absolute;
+    left: 0;
+}
+
+.brand a {
+    display: flex;
+    align-items: center;
+}
+.brand img {
+    transform: translateY(-.5em);
+}
+
 header a:hover {
     background-color: rgba(211, 211, 211, 0.19);
     backdrop-filter: blur(10px);
