@@ -560,6 +560,10 @@ footer .sitemap {
     flex-direction: column;
 }
 
+.car-comparison {
+    margin-bottom: 5em;
+}
+
 footer .social-media {
     font-size: 2em;
     column-gap: .2rem;
@@ -604,6 +608,10 @@ footer .copyright {
     .page-title img {
         
         box-sizing: border-box;
+    }
+    .mission-statement {
+        height: auto;
+        flex-direction: column !important;
     }
 
     .text-image {
