@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
+@font-face {
+    font-family: LogoFont;
+    src: url(content/RollboxRegular-jE2lv.ttf);
+  }
+
+
 
 :root {
     --color-active: #5313b3;
@@ -138,6 +144,10 @@ header a {
     border-radius: 3px;
     background-color:transparent;
     font-weight: 500;
+}
+
+.brand-text {
+    font-family: LogoFont;
 }
 
 header a:hover {
