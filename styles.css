@@ -23,6 +23,13 @@ body {
     border-radius: 50px;
     padding: .7em 1.1em;
     font-weight: 500;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: brightness(.9);
+ 
 }
 
 
@@ -47,6 +54,10 @@ body.light header {
 
 body.dark header {
     color: var(--color-text-dark);
+}
+
+body.dark header {
+    filter: brightness(0);
 }
 
 
@@ -92,10 +103,42 @@ nav {
 }
 
 .hero {
-    
+    color: var(--color-text-light);
     width: 100%;
     height: 100vh;
     box-shadow: inset 0 20em 10em #03020a70;
+}
+
+.hero-text {
+    z-index: 1;
+    position: absolute;
+    top: 7em;
+    right: 0;
+    padding-right: 5em;
+   
+    text-align: right;
+}
+
+.hero-text .big {
+   
+    font-size: 4em;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.hero-text .focus-title {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.hero-text .focus-description {
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.hero-text .button {
+    margin-left: 1em;
 }
 
 
@@ -153,7 +196,7 @@ nav {
 }
 
 .car-description {
-    padding: 1em 3em;
+    padding: 0em 3em;
 }
 
 .car-action {
@@ -172,20 +215,20 @@ nav {
 }
 
 .car-name {
-    margin: .5em 0;
+    margin: 0em 0;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .car-price {
     text-align: center;
     font-size: .9em;
-    opacity: .8;
+    opacity: .6;
     font-weight: 600;
 }
 
 .point {
-    font-size: .9em;
+    font-size: .8em;
     text-align: center;
     margin-bottom: 2em;
 
