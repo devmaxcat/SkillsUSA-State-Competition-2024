@@ -9,12 +9,49 @@
     <script src="main.js" defer></script>
 </head>
 
-<body class="dark on-page">
-    <section class="img-background" style="height: 70vh; filter: brightness(1.5);">
+<body class="light">
+    <section class="img-background" style="height: 70vh; filter: brightness(1.5); margin-bottom: 15em;">
         <img src="content/apex-1.png">
+        <form  class="contact" method="post">
+            <h1>Reach out.</h1>
+            <div class="contact-names">
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input name="firstname" type="text" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <input name="lastname" type="text" required>
+                </div>
+            </div>
+           
+           
+            <label for="email">Email</label>
+            <input name="email" type="email" required>
+            <div>
+                <label>Topic</label><br>
+                <select>
+                    <option>Question / Inquiry</option>
+                    <option>Warranty Claim</option>
+                    <option>Financing</option>
+                    <option>Shipping & Delivery</option>
+                    <option>Data Privacy</option>
+                    <option>Billing & Payments</option>
+                    <option>Suggestions</option>
+                    <option>Vehicle Software Issue</option>
+                    <option>Vehicle Hardware Issue</option>
+                    <option>Product Defects</option>
+                </select>
+            </div>
+            <label for="message"></label>
+            <textarea name="message"></textarea>
+            <input class="button" type="submit" value="Submit">
+        </form>
     </section>
-    <section class="contact">
-        <h1>Contact</h1>
+    <section>
+       
+        
+
     </section>
 </body>
 
