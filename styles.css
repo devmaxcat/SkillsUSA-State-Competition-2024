@@ -22,7 +22,7 @@ header {
     color: var(--color-dark);
     padding: 0 3em;
     position: absolute;
-    height: 3.5em;
+    height: 4em;
     width: 100%;
     box-sizing: border-box;
     background-color: transparent;
@@ -61,6 +61,11 @@ header a {
 header a:hover {
     background-color: rgba(211, 211, 211, 0.19);
     backdrop-filter: blur(10px);
+}
+
+header #logo {
+    width: 4em;
+    filter: brightness(2);
 }
 
 nav {
