@@ -8,7 +8,7 @@
 
 
 :root {
-    --color-active: #5313b3;
+    --color-active: #451293;
     --color-background: ;
     --color-foreground: #FFFFFF;
     --color-accent: ;
@@ -152,7 +152,7 @@ header a {
     font-weight: 500;
 }
 
-header .brand-text {
+.brand-text {
     font-family: LogoFont;
 }
 
@@ -515,10 +515,46 @@ textarea {
 }
 
 footer {
+    opacity: .8;
     background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+h6 {
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+footer a {
+    color: inherit;
 }
 
 footer .brand {
     height: 5em;
     filter: brightness(.4);
+}
+
+footer .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .sitemap {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social-media {
+    font-size: 2em;
+    column-gap: .2rem;
+    display: flex;
+}
+
+footer .copyright {
+    text-align: center;
 }
