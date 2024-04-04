@@ -9,6 +9,9 @@ $ = function (query) {
 function init() {
     loadHeader()
     loadFooter()
+
+   
+    
 }
 
 function loadHeader() {
@@ -16,6 +19,13 @@ function loadHeader() {
     xhttp.onload = function () {
         const htmlDoc = parser.parseFromString(this.responseText, 'text/html');
         $("body").prepend(htmlDoc.querySelector('header'));
+
+        $('#dropdown-a').onmouseover = function() {
+            $('header').classList.add('open')
+        }
+        $('header').onmouseleave = function() {
+            $('header').classList.remove('open')
+        }
     }
     xhttp.open("GET", "header.html", true);
     xhttp.send();
@@ -30,6 +40,8 @@ function loadFooter() {
     xhttp.open("GET", "footer.html", true);
     xhttp.send();
 }
+
+
 
 
 
