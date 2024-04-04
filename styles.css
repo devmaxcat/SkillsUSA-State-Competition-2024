@@ -23,10 +23,11 @@ header {
     height: 3.5em;
     width: 100%;
     box-sizing: border-box;
-   
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition:  300ms;
    
 }
 body.light header {
@@ -36,6 +37,8 @@ body.light header {
 body.dark header {
     color: var(--color-text-dark);
 }
+
+
 
 body.on-page header {
     position: static;
@@ -75,7 +78,7 @@ nav {
 .hero {
     
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     box-shadow: inset 0 20em 10em #03020a70;
 }
 
@@ -86,6 +89,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
+   
 
    
 }
@@ -101,11 +105,31 @@ nav {
     padding: .2em .2em !important;
 }
 
+.img-background {
+    
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0 20em 10em #03020a70;
+}
+
+
+.img-background img {
+    filter: brightness(.5);
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+   
+}
+
 /* */ 
 .car-comparison {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
 .car-info-list {
@@ -120,15 +144,22 @@ nav {
 }
 
 .car-name {
+    margin: .5em 0;
     text-align: center;
+    font-size: 2em;
 }
 
 .car-price {
     text-align: center;
     font-size: .9em;
+    opacity: .8;
 }
 
 .point {
     font-size: .9em;
     text-align: center;
+}
+
+.point .big-text {
+    font-size: 2.2em;
 }
