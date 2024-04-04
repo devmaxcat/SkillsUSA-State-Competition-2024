@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 :root {
-    --color-active: #6c09ff;
+    --color-active: #5313b3;
     --color-background: ;
     --color-foreground: #FFFFFF;
     --color-accent: ;
@@ -20,15 +20,16 @@ body {
     display: inline-block;
     background-color: var(--color-active);
     color: white;
-    border-radius: 50px;
+    border-radius: 4px;
     padding: .7em 1.1em;
     font-weight: 500;
     transition-duration: 200ms;
     cursor: pointer;
+    outline: 3px solid #5313b300;
 }
 
 .button:hover {
-    filter: brightness(.9);
+    outline: 4px solid #5313b332;
  
 }
 
@@ -106,13 +107,13 @@ nav {
     color: var(--color-text-light);
     width: 100%;
     height: 100vh;
-    box-shadow: inset 0 20em 10em #03020a70;
+    box-shadow: inset 0 20em 15em #03020a80;
 }
 
 .hero-text {
     z-index: 1;
     position: absolute;
-    top: 7em;
+    top: 6em;
     right: 0;
     padding-right: 5em;
    
@@ -121,14 +122,22 @@ nav {
 
 .hero-text .big {
    
-    font-size: 4em;
+    font-size: 5em;
     margin: 0;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
+}
+
+.hero-text .small {
+   
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .hero-text .focus-title {
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 1em;
 }
 
@@ -183,6 +192,32 @@ nav {
    
 }
 
+.page-title {
+    padding: 0 10%;
+    height: 14em;
+   display: flex;
+   column-gap: 10%;
+   margin-top: 3em;
+   margin-bottom: 8em;
+   align-items: center;
+  
+}
+
+.page-title .title {
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: -1px;
+    min-width: max-content;
+}
+
+
+.page-title img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* */ 
 .car-comparison {
     width: 100%;
@@ -208,7 +243,7 @@ nav {
 }
 
 .car-preview {
-
+        filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.356));
         width: 100%;
         height: 12em;
         object-fit: cover;
